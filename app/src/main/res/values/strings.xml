@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Ziomkolandia SMS</string>
+    <string name="debrzno">Debrzno</string>
+    <string name="wierzchowo">Wierzchowo</string>
+    <string name="jacek">Jacek i Agatka</string>
+    <string name="bajka">Bajka</string>
+    <string name="Smyk">Smyk</string>
+    <string name="piano">Piano</string>
+    <string name="rychnowy">Rychnowach</string>
+    <string name="wybierz_miesiac">Wybierz miesiąc</string>
+    <string name="wpisz_kwote">Wpisz kwotę</string>
+    <string name="test">Test</string>
+    <string name="polnnica">Polnica</string>
+    <string name="przechlewo">Przechlewo</string>
+    <string name="zlobek">Debrzno Żłobek</string>
+
+
+    <string-array name="months">
+        <item>styczniu</item>
+        <item>lutym</item>
+        <item>marcu</item>
+        <item>kwietniu</item>
+        <item>maju</item>
+        <item>czerwcu</item>
+        <item>wrześniu</item>
+        <item>październiku</item>
+        <item>listopadzie</item>
+        <item>grudniu</item>
+    </string-array>
+</resources>

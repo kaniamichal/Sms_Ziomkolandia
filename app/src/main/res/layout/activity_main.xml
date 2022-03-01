@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editValue"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="32dp"
+        android:autofillHints="Wpisz kwotę"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelNumberPhone"
+        tools:ignore="LabelFor,MissingConstraints,TextFields,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnDebrzno"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="50dp"
+        android:onClick="smsSendDebrzno"
+        android:text="@string/debrzno"
+        android:textColor="#FFA000"
+        android:textSize="14sp"
+        app:backgroundTint="#3C7800"
+        app:iconTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editValue"
+        tools:ignore="MissingConstraints,UsingOnClickInXml,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnJacekAgatka"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="50dp"
+        android:onClick="smsSendJacekAgatka"
+        android:text="@string/jacek"
+        android:textColor="#FFA000"
+        app:backgroundTint="#3C7800"
+        app:iconTint="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/btnDebrzno"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerMonthList"
+        tools:ignore="MissingConstraints,UsingOnClickInXml,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnPiano"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:onClick="smsSendPiano"
+        android:text="@string/piano"
+        android:textColor="#FFA000"
+        app:backgroundTint="#3C7800"
+        app:iconTint="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/btnRychnowy"
+        app:layout_constraintTop_toBottomOf="@+id/btnBajka"
+        tools:ignore="MissingConstraints,UsingOnClickInXml,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnBajka"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:onClick="smsSendBajka"
+        android:text="@string/bajka"
+        android:textColor="#FFA000"
+        app:backgroundTint="#3C7800"
+        app:iconTint="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/btnWierzchowo"
+        app:layout_constraintTop_toBottomOf="@+id/btnJacekAgatka"
+        tools:ignore="MissingConstraints,UsingOnClickInXml,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnRychnowy"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="32dp"
+        android:onClick="smsSendRychonowy"
+        android:text="@string/rychnowy"
+        android:textColor="#FFA000"
+        app:backgroundTint="#3C7800"
+        app:iconTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnWierzchowo"
+        tools:ignore="MissingConstraints,UsingOnClickInXml,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnPolnica"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="32dp"
+        android:onClick="smsSendPolnica"
+        android:text="@string/polnnica"
+        android:textColor="#FFA000"
+        app:backgroundTint="#3C7800"
+        app:iconTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRychnowy"
+        tools:ignore="MissingConstraints,UsingOnClickInXml,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnDebrznoZlobek"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="32dp"
+        android:onClick="smsSendDebrznoZlobek"
+        android:text="@string/zlobek"
+        android:textColor="#FFA000"
+        app:backgroundTint="#3C7800"
+        app:iconTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPolnica"
+        tools:ignore="MissingConstraints,UsingOnClickInXml,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnPrzechlewo"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:onClick="smsSendPrzechlewo"
+        android:text="@string/przechlewo"
+        android:textColor="#FFA000"
+        app:backgroundTint="#3C7800"
+        app:iconTint="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/btnPolnica"
+        app:layout_constraintTop_toBottomOf="@+id/btnPiano"
+        tools:ignore="MissingConstraints,UsingOnClickInXml,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/labelMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/wybierz_miesiac"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/labelNumberPhone"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/labelNumberPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/wpisz_kwote"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnWierzchowo"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="32dp"
+        android:onClick="smsSendWierzchowo"
+        android:text="@string/wierzchowo"
+        android:textColor="#FFA000"
+        app:backgroundTint="#3C7800"
+        app:iconTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDebrzno"
+        tools:ignore="UsingOnClickInXml,TextContrastCheck" />
+
+    <Spinner
+        android:id="@+id/spinnerMonthList"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/editValue"
+        app:layout_constraintTop_toBottomOf="@+id/labelMonth"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
